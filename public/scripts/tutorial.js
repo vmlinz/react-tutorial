@@ -1,4 +1,8 @@
-// tutorial1.js
+var data = [
+  {id: 1, author: "Nick Qi", text: "This is one comment"},
+  {id: 2, author: "Mark Wong", text: "This is another comment"}
+];
+
 var Comment = React.createClass({
   rawMarkup: function () {
     var rawMarkup = marked(this.props.children.toString(), {sanitize: true});
